@@ -19,9 +19,9 @@ const initDatabase = async () => {
       }
     }
 
-    // Asegurar que exista un único índice para email
+/*     // Asegurar que exista un único índice para email
     await sequelize.query(`ALTER TABLE Users ADD UNIQUE INDEX IF NOT EXISTS unique_email (email)`);
-    console.log('Índice único para email verificado');
+    console.log('Índice único para email verificado'); */
 
     // Verificar si existe un admin
     const adminExists = await User.findOne({ where: { isAdmin: true } });
