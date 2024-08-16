@@ -53,14 +53,12 @@ class User extends Model {
       hooks: {
         beforeCreate: async (user) => {
           if (user.password) {
-            const salt = await bcrypt.genSalt(10);
-            user.password = await bcrypt.hash(user.password, salt);
+            user.password = await User.hashPassword(user.password);
           }
         },
         beforeUpdate: async (user) => {
           if (user.changed('password')) {
-            const salt = await bcrypt.genSalt(10);
-            user.password = await bcrypt.hash(user.password, salt);
+            user.password = await User.hashPassword(user.password);
           }
         }
       }
@@ -72,6 +70,11 @@ class User extends Model {
       foreignKey: 'UserId',
       as: 'incidences'
     });
+  }
+
+  static async hashPassword(password) {
+    const salt = await bcrypt.genSalt(10);
+    return bcrypt.hash(password, salt);
   }
 
   async validatePassword(password) {

@@ -26,7 +26,7 @@ app.use('/uploads', express.static('uploads'));
 
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:5173", "http://localhost:3000", "https://tudominio.com"],
+    origin: ["http://localhost:5173", "http://localhost:3000"],
     methods: ["GET", "POST"],
     credentials: true
   }
@@ -42,6 +42,12 @@ initDatabase().then(() => {
   });
 }).catch(error => {
   console.error('Failed to initialize database:', error);
+});
+
+// En tu archivo principal del servidor (app.js o server.js)
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).send('Something broke!');
 });
 
 export default app;

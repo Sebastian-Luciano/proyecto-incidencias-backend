@@ -1,0 +1,5 @@
+email: admin@example.com / password: P@ssword123
+email: sebastianperu7@hotmail.com / password: Cl@ve321
+email: ana@example.com / password: Cl@ve123
+email: jose@example.com / password: Alv@rez123
+email: juan@example.com / password: Ju@n1234

@@ -3,6 +3,7 @@ import { body } from 'express-validator';
 import { validateRequest } from '../utils/validation.js';
 import * as userController from '../controllers/userController.js';
 import { auth, isAdmin } from '../middlewares/auth.js';
+import userPhotoUpload from '../middlewares/userUpload.js';
 
 const router = express.Router();
 
@@ -13,7 +14,9 @@ router.post('/register', [
 ], userController.register);
 
 router.post('/login', userController.login);
-router.put('/:id', auth, userController.updateProfile);
-router.put('/:id/change-password', auth, userController.changePassword);
+
+router.post('/login', userController.login);
+router.put('/:id', auth, userPhotoUpload, userController.updateUser);
+router.put('/:id/update-password', auth, userController.updatePassword);
 
 export default router;
