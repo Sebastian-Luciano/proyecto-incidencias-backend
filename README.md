@@ -27,7 +27,6 @@ Este repositorio contiene el backend del sistema de gestión de incidencias desa
 ## 🚀 Instalación y Ejecución
 
 1. Clona el repositorio:
-```bash
 git clone https://github.com/Sebastian-Luciano/proyecto-incidencias-backend.git
 cd proyecto-incidencias-backend
 
@@ -50,11 +49,11 @@ npm run dev
    Contraseña: AdminPassword123!
 
 🧩 Funcionalidades Principales
-   - **Registro y autenticación de usuarios (JWT)**
-   - **Roles diferenciados: administrador y usuario**
-   - **Gestión CRUD de incidencias**
-   - **Sistema de notificaciones**
-   - **Middleware de validación y autorización**
+   - Registro y autenticación de usuarios (JWT)
+   - Roles diferenciados: administrador y usuario
+   - Gestión CRUD de incidencias
+   - Sistema de notificaciones
+   - Middleware de validación y autorización
 
 👤 Autor
 Sebastián Javier Luciano Marceliano
