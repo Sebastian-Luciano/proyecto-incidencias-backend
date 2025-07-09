@@ -13,7 +13,7 @@ Este repositorio contiene el backend del sistema de gestión de incidencias desa
 - **Dotenv** para variables de entorno
 
 ## 📁 Estructura de Carpetas
-```text
+```
 ├── src/
 │ ├── controllers/
 │ ├── models/
@@ -23,7 +23,7 @@ Este repositorio contiene el backend del sistema de gestión de incidencias desa
 │ └── app.js
 ├── .env
 ├── package.json
-
+```
 ## 🚀 Instalación y Ejecución
 
 1. Clona el repositorio:
@@ -48,17 +48,17 @@ npm run dev
    Email: admin@example.com
    Contraseña: AdminPassword123!
 
-🧩 Funcionalidades Principales
+## 🧩 Funcionalidades Principales
    - Registro y autenticación de usuarios (JWT)
    - Roles diferenciados: administrador y usuario
    - Gestión CRUD de incidencias
    - Sistema de notificaciones
    - Middleware de validación y autorización
 
-👤 Autor
-Sebastián Javier Luciano Marceliano
-🔗 GitHub
-📧 sebastianperu7@gmail.com
+## 👤 Autor
+Sebastián Javier Luciano Marceliano  
+🔗 [GitHub](https://github.com/Sebastian-Luciano)  
+✉️ [sebastianperu7@gmail.com](mailto:sebastianperu7@gmail.com)
 
-📄 Licencia
+## 📄 Licencia
 Este proyecto fue desarrollado con fines educativos como parte del curso de Full Stack Developer en FUNVAL.
