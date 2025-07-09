@@ -72,18 +72,6 @@ npm run dev
 
 El proyecto utiliza MySQL con Sequelize ORM. La base de datos se configurará automáticamente al ejecutar el proyecto por primera vez.
 
-## 📡 API Endpoints
-
-### Autenticación
-- `POST /api/auth/login` - Iniciar sesión
-- `POST /api/auth/register` - Registrar usuario
-
-### Incidencias
-- `GET /api/incidencias` - Obtener todas las incidencias
-- `POST /api/incidencias` - Crear nueva incidencia
-- `PUT /api/incidencias/:id` - Actualizar incidencia
-- `DELETE /api/incidencias/:id` - Eliminar incidencia
-
 ## 👤 Autor
 
 **Sebastián Javier Luciano Marceliano**  
