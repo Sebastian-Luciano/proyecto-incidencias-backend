@@ -30,3 +30,12 @@ Este repositorio contiene el backend del sistema de gestión de incidencias desa
 ```bash
 git clone https://github.com/Sebastian-Luciano/proyecto-incidencias-backend.git
 cd proyecto-incidencias-backend
+
+2. Instala las dependencias:
+npm install
+
+3. Crea un archivo .env en la raíz del proyecto con la siguiente variable:
+VITE_API_URL=http://localhost:3000/api
+
+4. Ejecuta el proyecto:
+npm run dev
